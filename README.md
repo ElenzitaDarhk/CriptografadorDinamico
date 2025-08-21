@@ -24,4 +24,4 @@ Configuração Ativa para esse AppCliente em 25-09-21, algorítmo RC4, chave "Ap
 ![Alt text](/CriptografadorDinamico-Objetos.jpg "Objects Diagram")
 
 # Detalhamento
-[1. Detalhamento dos casos de uso e Diagrama de Classe](/Detail.md).
+[1. Detalhamento dos Casos de Uso e Diagrama de Classe](/Detail.md).
