@@ -1,6 +1,6 @@
 # Detalhamento dos Casos de Uso
 
-![Alt text](https://github.com/ElenzitaDarhk/CriptografadorDinamico/blob/Develop/CriptografadorDinamico-UseCase.jpg "Use Case")
+![Alt text](/CriptografadorDinamico-UseCase.jpg "Use Case")
 
 <h2>Gerenciar Configuração de Criptografia</h2>
 
