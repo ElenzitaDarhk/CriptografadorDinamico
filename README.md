@@ -17,7 +17,8 @@ Configuração Ativa para esse AppCliente em 025-08-21, algorítmo RSA, chave "A
 
 Configuração Ativa para esse AppCliente em 025-08-21, algorítmo RC4, chave "AppCliente03"
 
+#Use Case
 ![Alt text](https://github.com/ElenzitaDarhk/CriptografadorDinamico/blob/Develop/CriptografadorDinamico-UseCase.jpg "Use Case")
 
-
+#Objects Diagram
 ![Alt text](https://github.com/ElenzitaDarhk/CriptografadorDinamico/blob/Develop/CriptografadorDinamico-Objetos.jpg "Objects Diagram")
