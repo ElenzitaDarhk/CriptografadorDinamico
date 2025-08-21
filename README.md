@@ -4,7 +4,7 @@ Essa configuração estará ativa por um período de tempo. Sendo assim cada dad
 
 {
 	"string": "José",
-	"data": 2025-08-21,
+	"data": 2025-08-21
 } 
 
 Configuração Ativa para esse AppCliente em 025-08-21, algorítmo RSA, chave "AppCliente01"
@@ -12,7 +12,7 @@ Configuração Ativa para esse AppCliente em 025-08-21, algorítmo RSA, chave "A
 
 {
 	"string": "José",
-	"data": 2025-09-21,
+	"data": 2025-09-21
 } 
 
 Configuração Ativa para esse AppCliente em 025-08-21, algorítmo RC4, chave "AppCliente03"
