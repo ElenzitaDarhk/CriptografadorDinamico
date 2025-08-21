@@ -18,10 +18,10 @@ Configuração Ativa para esse AppCliente em 25-08-21, algorítmo RSA, chave "Ap
 Configuração Ativa para esse AppCliente em 25-09-21, algorítmo RC4, chave "AppCliente03"
 
 # Use Case
-![Alt text](https://github.com/ElenzitaDarhk/CriptografadorDinamico/blob/Develop/CriptografadorDinamico-UseCase.jpg "Use Case")
+![Alt text](/CriptografadorDinamico-UseCase.jpg "Use Case")
 
 # Objects Diagram
-![Alt text](https://github.com/ElenzitaDarhk/CriptografadorDinamico/blob/Develop/CriptografadorDinamico-Objetos.jpg "Objects Diagram")
+![Alt text](/CriptografadorDinamico-Objetos.jpg "Objects Diagram")
 
 # Detalhamento
 [1.](/Detail.md).
