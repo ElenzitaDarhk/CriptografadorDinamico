@@ -1,5 +1,7 @@
 # Detalhamento dos Casos de Uso
 
+![Alt text](https://github.com/ElenzitaDarhk/CriptografadorDinamico/blob/Develop/CriptografadorDinamico-UseCase.jpg "Use Case")
+
 <h2>Gerenciar Configuração de Criptografia</h2>
 
 <h3>Premissas</h3>
@@ -35,5 +37,3 @@ Fornecer a ultima configuração ativa para o appClient do usuário.
 3. Devolver a configuração que estava ativa na data origem do registro.
 <h4>Resultado Esperado</h4>
 Fornecer a configuração ativa para o appClient do usuário na data origem do registro.
-
-# Class Diagram
