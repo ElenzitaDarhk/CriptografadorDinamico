@@ -4,7 +4,7 @@ Essa configuração estará ativa por um período de tempo. Sendo assim cada dad
 
 {
 	"string": "José",
-	"data": 2025-08-21,
+	"data": 2025-08-21
 } 
 
 Configuração Ativa para esse AppCliente em 025-08-21, algorítmo RSA, chave "AppCliente01"
@@ -12,14 +12,13 @@ Configuração Ativa para esse AppCliente em 025-08-21, algorítmo RSA, chave "A
 
 {
 	"string": "José",
-	"data": 2025-09-21,
+	"data": 2025-09-21
 } 
 
 Configuração Ativa para esse AppCliente em 025-08-21, algorítmo RC4, chave "AppCliente03"
 
+# Use Case
+![Alt text](https://github.com/ElenzitaDarhk/CriptografadorDinamico/blob/Develop/CriptografadorDinamico-UseCase.jpg "Use Case")
 
-Use Case
-[https://github.com/ElenzitaDarhk/CriptografadorDinamico/blob/Develop/UseCase.drawio.html](https://github.com/ElenzitaDarhk/CriptografadorDinamico/blob/Develop/CriptografadorDinamico-Objetos.jpg)
-
-Objects Diagram
-[https://github.com/ElenzitaDarhk/CriptografadorDinamico/blob/Develop/Objetos.drawio.html](https://github.com/ElenzitaDarhk/CriptografadorDinamico/blob/Develop/CriptografadorDinamico-Objetos.jpg)
+# Objects Diagram
+![Alt text](https://github.com/ElenzitaDarhk/CriptografadorDinamico/blob/Develop/CriptografadorDinamico-Objetos.jpg "Objects Diagram")
