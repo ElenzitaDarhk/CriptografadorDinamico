@@ -19,7 +19,7 @@ Configuração Ativa para esse AppCliente em 025-08-21, algorítmo RC4, chave "A
 
 
 Use Case
-![Alt text](https://github.com/ElenzitaDarhk/CriptografadorDinamico/blob/Develop/CriptografadorDinamico-Objetos.jpg)
+![Alt text](https://github.com/ElenzitaDarhk/CriptografadorDinamico/blob/Develop/CriptografadorDinamico-UseCase.jpg)
 
 
 Objects Diagram
