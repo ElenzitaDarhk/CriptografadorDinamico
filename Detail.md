@@ -1,9 +1,9 @@
 # Detalhamento dos Casos de Uso
 
-<h1>Gerenciar Configuração de Criptografia</h1>
+<h2>Gerenciar Configuração de Criptografia</h2>
 
 
-<h1>Recuperar Configuração de Criptografia</h1>
+<h2>Recuperar Configuração de Criptografia</h2>
 
 
 # Class Diagram
