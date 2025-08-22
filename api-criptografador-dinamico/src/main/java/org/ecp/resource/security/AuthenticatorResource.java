@@ -35,6 +35,7 @@ public class AuthenticatorResource {
 	    							.upn("jdoe@quarkus.io")
 	    							.groups(new HashSet<>(Arrays.asList("User", "Admin")))
 	    							.claim(Claims.birthdate.name(), "2025-08-22")
+	    							.claim(Claims.preferred_username.name(), client)
 	    							.sign();
 	    	
 	    	return Response.ok(token).build();
