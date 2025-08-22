@@ -26,3 +26,5 @@ Configuração Ativa para esse AppCliente em 25-09-21, algorítmo RC4, chave "Ap
 # Detalhamento
 [1. Detalhamento dos Casos de Uso](/Detail.md).<br>
 [2. Diagrama de Classes](/ClassDiagram.md)<br>
+[3. Diagrama de Arquitetura](/Architecture.md)
+
