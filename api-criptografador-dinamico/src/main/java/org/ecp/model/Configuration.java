@@ -9,6 +9,7 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @Table(name = "Configuration")
@@ -21,7 +22,7 @@ public class Configuration extends PanacheEntity {
 	@ManyToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "algorithmId")
 	private Algorithm algorithm;
-    
+	
 	@Column(name = "KeyWord" , nullable = false)
     public String keyWord;
 	
@@ -33,5 +34,12 @@ public class Configuration extends PanacheEntity {
 	
 	@Column(name = "Enable" , nullable = false)
     public Boolean enable;
+	
+	@Column(name = "UpdateDate", nullable = true)
+    public LocalDateTime updateDate;
+	
+    public static Configuration findEnable(Long appClientId) {
+        return find("enable", true).firstResult();
+    }
 	
 }
