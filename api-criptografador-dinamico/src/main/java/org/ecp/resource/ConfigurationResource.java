@@ -5,8 +5,10 @@ import java.util.List;
 import org.ecp.model.Configuration;
 import org.ecp.dto.ConfigurationDto;
 
+import jakarta.transaction.Transactional;
 import jakarta.ws.rs.Consumes;
 import jakarta.ws.rs.GET;
+import jakarta.ws.rs.POST;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.QueryParam;
@@ -25,8 +27,15 @@ public class ConfigurationResource {
 	}
 	
 	@GET
-	@Path("GetByAppClientId")
+	@Path("GetAllByAppClientId")
 	public Response getByAppClientId(@QueryParam("appClientId") Long appClientId)
+	{
+		return Response.ok(Configuration.findByAppClientId(appClientId)).build();
+	}
+	
+	@GET
+	@Path("GetEnableByAppClientId")
+	public Response getEnableByAppClientId(@QueryParam("appClientId") Long appClientId)
 	{
 		Configuration config = Configuration.findByAppClientIdEnable(appClientId, true);
 		
@@ -40,6 +49,20 @@ public class ConfigurationResource {
 			
 			return Response.ok(dto).build();
 		}
+	}
+	
+	@POST
+	@Transactional
+	public Response post(Configuration configuration)
+	{
+		Configuration old = Configuration.findByAppClientIdEnable(configuration.appClient.id, true);
+		old.enable = false;
+		old.persist();
+		
+		configuration.id = null;
+		configuration.persist();
+		
+		return Response.ok(configuration).build();
 	}
 	
 }

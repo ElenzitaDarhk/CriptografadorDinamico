@@ -19,11 +19,11 @@ import java.util.Map;
 @Table(name = "Configuration")
 public class Configuration extends PanacheEntity {
 	
-	@ManyToOne(cascade = CascadeType.ALL)
+	@ManyToOne(cascade = CascadeType.REMOVE)
 	@JoinColumn(name = "appClientId")
 	public AppClient appClient;
 	
-	@ManyToOne(cascade = CascadeType.ALL)
+	@ManyToOne(cascade = CascadeType.REMOVE)
 	@JoinColumn(name = "algorithmId")
 	public Algorithm algorithm;
 	
@@ -41,6 +41,11 @@ public class Configuration extends PanacheEntity {
 	
 	@Column(name = "UpdateDate", nullable = true)
     public LocalDateTime updateDate;
+	
+    public static List<Configuration> findByAppClientId(Long appClientId) {
+    	
+    	return find("appClient.id", appClientId).list();
+    }
 	
     public static Configuration findByAppClientIdEnable(Long appClientId, boolean enable) {
     	
