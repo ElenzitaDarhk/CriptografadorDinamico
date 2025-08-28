@@ -1,6 +1,9 @@
 package org.ecp.model;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
+import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
+import io.quarkus.hibernate.orm.panache.PanacheQuery;
+import io.quarkus.panache.common.Parameters;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -10,6 +13,7 @@ import jakarta.persistence.Table;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Map;
 
 @Entity
 @Table(name = "Configuration")
@@ -17,11 +21,11 @@ public class Configuration extends PanacheEntity {
 	
 	@ManyToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "appClientId")
-	private AppClient appClient;
+	public AppClient appClient;
 	
 	@ManyToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "algorithmId")
-	private Algorithm algorithm;
+	public Algorithm algorithm;
 	
 	@Column(name = "KeyWord" , nullable = false)
     public String keyWord;
@@ -38,8 +42,9 @@ public class Configuration extends PanacheEntity {
 	@Column(name = "UpdateDate", nullable = true)
     public LocalDateTime updateDate;
 	
-    public static Configuration findEnable(Long appClientId) {
-        return find("enable", true).firstResult();
+    public static Configuration findByAppClientIdEnable(Long appClientId, boolean enable) {
+    	
+    	return find("appClient.id =?1 and enable = ?2", appClientId, enable).firstResult();
     }
 	
 }

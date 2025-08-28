@@ -3,6 +3,7 @@ package org.ecp.resource;
 import java.util.List;
 
 import org.ecp.model.Configuration;
+import org.ecp.dto.ConfigurationDto;
 
 import jakarta.ws.rs.Consumes;
 import jakarta.ws.rs.GET;
@@ -23,17 +24,22 @@ public class ConfigurationResource {
 		return Response.ok(Configuration.listAll()).build();
 	}
 	
-	//TODO:
 	@GET
 	@Path("GetByAppClientId")
 	public Response getByAppClientId(@QueryParam("appClientId") Long appClientId)
 	{
-		Configuration config = Configuration.findEnable(appClientId);
+		Configuration config = Configuration.findByAppClientIdEnable(appClientId, true);
 		
 		if(config == null)
 			return Response.noContent().build();
 		else
-			return Response.ok(config).build();
+		{
+			ConfigurationDto dto = new ConfigurationDto();
+			dto.setAlgorithmName(config.algorithm.name);
+			dto.setKeyword(config.keyWord);
+			
+			return Response.ok(dto).build();
+		}
 	}
 	
 }
